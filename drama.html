@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Anime</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('ssq8.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 30%;
+            height: 30;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Romance</h2>
+        <div class="gallery">
+            <img src="d1.jpeg" alt="Image 1">
+            <img src="d2.jpeg" alt="Image 2">
+            <img src="d3.jpeg" alt="Image 3">
+            <img src="d4.jpeg" alt="Image 4">
+            <img src="d5.jpeg" alt="Image 5">
+            <img src="d6.jpeg" alt="Image 6">
+        </div>
+        <p><a href="home.html">Back to Home</a></p>
+    </div>
+
+    <script>
+        // Check if user is already logged in
+        window.onload = function() {
+            const user = localStorage.getItem('user');
+            if (!user) {
+                window.location.href = 'home.html';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Anime</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('ssq2.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 30%;
+            height: 30;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Action</h2>
+        <div class="gallery">
+            <img src="a1.jpg" alt="Image 1">
+            <img src="a2.jpg" alt="Image 2">
+            <img src="a3.jpg" alt="Image 3">
+            <img src="a4.jpg" alt="Image 4">
+            <img src="a5.jpg" alt="Image 5">
+            <img src="a6.jpg" alt="Image 6">
+            <img src="a7.jpg" alt="Image 7">
+            <img src="a8.jpg" alt="Image 8">
+            <img src="a9.jpg" alt="Image 9">
+        </div>
+        <p><a href="home.html">Back to Home</a></p>
+    </div>
+
+    <script>
+        // Check if user is already logged in
+        window.onload = function() {
+            const user = localStorage.getItem('user');
+            if (!user) {
+                window.location.href = 'home.html';
+            }
+        }
+    </script>
+</body>
+</html>
